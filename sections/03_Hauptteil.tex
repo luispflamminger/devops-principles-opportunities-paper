@@ -1,1 +1,164 @@
-\section{Hauptteil}
+\newpage
+\section{Prinzipien und Chancen von DevOps}
+
+\subsection{Definition und Ziel von DevOps}
+
+Der Begriff DevOps setzt sich aus den Begriffen Development und 
+Operations (engl. Betrieb) abgeleitet ist \cite{Alt2017}.
+Development steht dabei für die Softwareentwicklung,
+während Operations für den IT-Betrieb steht \cite{DevOpsAgileHeroes}.
+
+DevOps ist eine Kombination von kulturellen und organisatorischen Denkweisen,
+Prozessen und Tools, die darauf ausgerichtet sind, den Zeitraum zwischen 
+der Planung und Entwicklung einer Änderung an der Software,
+bis zur Bereitstellung dieser
+Änderung für Kunden auf dem Produktivsystem möglichst weit zu verringern \cite{AmazonDevOps}.
+Eine Änderung kann dabei ein neues Produkt, Feature oder das Beheben eines Fehlers sein.
+Durch diese erhöhte Geschwindigkeit können Unternehmen die Time-to-Market,
+also die Zeit, bis ein neues Feature oder Produkt den Markt erreicht,
+drastisch reduzieren, was es ihnen in erster Linie erlaubt,
+schnell auf Feedback der Kunden und Veränderungen auf dem Markt reagieren zu können,
+um einen Wettbewerbsvorteil zu erlangen. Auch Fehler können schneller angegangen werden,
+was eine kontinuierliche Verbesserung des Service zur Folge hat \cite{Halstenberg2020}.
+
+DevOps nahm seinen Ursprung bei einer Konferenz in 2009, bei der das Team von Flickr
+einen Prozess vorstellte, mit dem es in der Lage ist, neue Änderungen an der Software
+bis zu zehn mal am Tag in das Produktionssystem zu übernehmen.
+Inspiriert ist die Bewegung auch durch das \ac{TPS}, welches durch
+T. Ohno bei Toyota entwickelt wurde \cite{Halstenberg2020}.
+Es ist ein Produktionssystem in der Autoindustrie, das einzig darauf ausgerichtet ist,
+den Moment zwischen dem Kundenauftrag und dem Geldeingang zu minimieren.
+Konzepte aus \ac{TPS} wurden auf den IT-Wertschöpfungsprozess umgelegt,
+um von den gleichen Vorteilen profitieren zu können \cite{Halstenberg2020}.
+
+DevOps stellt keinen festgelegten Standard, wie z.B. SCRUM dar,
+sondern entwickelt sich kontinuierlich weiter.
+Es beruht auf bereits etablierten Konzepten wie Agilität, IT-Service Management,
+KanBan und Automatisierung. Dabei erfindet es diese Konzepte nicht neu, sondern bietet
+die Möglichkeit, sie zu nutzen, um eine Brücke zwischen den drei Seiten 
+Entwicklung, Betrieb und Business zu schaffen \cite{Halstenberg2020}
+
+\subsection{Die Säulen von DevOps}
+
+Das Akronym \ac{CAMS}, oder erweitert \ac{CALMAS}, wird verwendet, um
+Einige Grundsätze von DevOps zusammenzufassen.
+
+\textbf{Culture} (Kultur):
+
+Die Kultur im Unternehmen und im Team ist ein wichtiger Bestandteil von DevOps.
+Grundlage der Kultur ist die intensive Zusammenarbeit miteinander.
+Die Gewinnung und das Verteilen von Informationen wird gefördert. Das Überbringen
+schlechter Nachrichten ist wichtig und wird befürwortet, um Fehler schnell beheben
+zu können. Dabei werden diese nicht verurteilt oder bestraft, sondern untersucht und
+korrigiert. Risiken werden geteilt und abteilungsübergreifendes Handeln wird gefördert.
+Ein wichtiger Teil der Kultur ist es zudem, ständig neue Ansätze auszuprobieren,
+um sich kontinuierlich weiterzuentwickeln \cite{Halstenberg2020}.
+
+\textbf{Automation} (Automatisierung):
+
+Die gesamte Kette des Softwareentwicklungsprozesses sollte automatisiert abgebildet werden.
+Dies wird über sog. \ac{CI/CD} Pipelines realisiert und umfasst unter anderem 
+automatisierte Tests, Bereitstellung und Produktivnahme der Software.
+Durch Automatisierung können Liegezeiten und Fehler vermieden, sowie
+Entlastung bei den Mitarbeitern geschaffen werden \cite{Alt2017}\cite{Halstenberg2020}.
+
+\textbf{Lean}:
+
+Lean-Methoden umfassen vor allem leichtgewichtige Entscheidungsprozesse, kontinuierliche
+Messungen und die Visualisierung von Arbeit.
+Auch die Limitierung von Work-in-Progress Items ist wichtig um Durchlaufzeiten zu verringern.
+Sie begrenzen die Anzahl an Aufgaben, die ein Mitarbeiter oder das gesamte Team
+gleichzeitig in Bearbeitung haben darf \cite{Halstenberg2020}.
+
+\textbf{Measurement} (Messung):
+
+Um die Produktivität des DevOps Prozesses steigern zu können, sind \acp{KPI} nötig,
+um die Leistung des Teams einstufen und messbare Ziele definieren zu können.
+Interessante Kennzahlen sind dabei z.B. Verfügbarkeiten, die Dauer vom Auftreten
+eines Fehlers bis zur Behebung oder die Zeit von einer Änderung im Code, bis diese in
+der Produktion zu sehen ist.
+Zudem sind Kennzahlen, die den geschäftlichen Nutzen der IT messen wichtig \cite{Halstenberg2020}.
+
+\textbf{Added Value} (Mehrwert):
+
+DevOps darf nur eingesetzt werden, wenn es einen konkreten Mehrwert für das Unternehmen
+bringt. Ein gutes Beispiel für solch einen Mehrwert, ist die schnellere Auslieferung
+eines Features an einen Kunden oder das schnellere Beheben eines Fehlers \cite{Halstenberg2020}.
+Kann kein messbarer Mehrwert festgestellt werden, wurde DevOps nicht erfolgreich implementiert.
+
+
+\textbf{Sharing} (Teilen):
+
+Eng mit dem Punkt "Culture" ist auch der Punkt "Sharing" verbunden.
+Er beschreibt das Prinzip des Teilens von für die Zusammenarbeit notwendigem Wissen
+mit allen Beteiligten Mitarbeitern. Dieses Wissen kann die das Produkt selbst,
+aber auch Prozesse und Tools, die den DevOps Prozess erleichtern, umfassen.
+Wie bereits genannt ist das Teilen von Fehlern auch ein zentraler Bestandteil und
+muss ohne Schuldzuweisungen, sondern Lösungsorientiert, erfolgen \cite{Halstenberg2020}.
+
+\subsection{Chancen von DevOps}
+
+Die heutige Geschäftsumgebung lässt sich gut durch das Akronym \ac{VUCA} darstellen,
+welches Zusammengefasst folgende Punkte beinhaltet.
+Die Märkte und Kundenanforderungen sind wechselhaft und verändern sich ständig.
+Dadurch entsteht eine gewisse Unsicherheit, die es erschwert, langfristige Projekte
+und Strategien zu planen \cite{Halstenberg2020}.
+Mit dem hohen Grad an Vernetzung zwischen verschiedenen Anwendungen und Prozessen
+geht eine hohe Komplexität einher. Der Zusammenhang zwischen Ursache und Wirkung
+ist oft unklar. Zudem sind meist verschiedene Handlungsalternativen als Antwort
+auf bestimmte Informationen möglich, da diese durch komplexe Zusammenhänge
+oft mehrdeutig interpretiert werden können \cite{Halstenberg2020}.
+
+DevOps bietet eine Antwort auf fast alle dieser Punkte und bietet somit die Chance,
+in einer VUCA-Welt geschäfts- und handlungsfähig zu bleiben.
+
+Durch die hohe Geschwindigkeit ist DevOps in der Lage, die Time-to-Market erheblich
+zu senken. In einer VUCA-Welt hat dies mehrere Vorteile.
+Zum einen kann wesentlich schneller auf Veränderungen im Markt reagiert werden,
+da die Durchlaufzeit von Anpassungen am Produkt oder neuen Features geringer ist.
+Dies erhöht die Chance, dass Kundenanforderungen nicht bereits veraltet sind,
+wenn die Änderungen fertiggestellt werden \cite{Halstenberg2020}
+
+Durch die rasche Bereitstellung verringert sich auch die Time-to-Value, das heißt die 
+Zeit, bis der Kunde einen ersten Mehrwert aus einem Produkt ziehen kann.
+Dies wird durch das kontinierliche Deployment neuer Änderungen erreicht. So erhält
+der Kunde zu Anfang zwar kein fertiges Produkt, kann aber bereits Vorteile aus einem
+Prototypen ziehen \cite{Halstenberg2020}. Zudem verringert sich so die Zeit, bis Feedback eingeholt werden kann
+was Unsicherheit und Komplexität verringert und Planungssicherheit gibt.
+
+Die verbesserte Zusammenarbeit innerhalb cross-funktionaler Teams mit guter Kultur
+kann helfen, die Komplexität und Ambiguität des Geschäftsumfelds zu verringern.
+Bessere Kommunikation und unterschiedliche Skillsets ermöglichen einen besseren Überblick
+über verschiedene Handlungsoptionen und erleichern die Entscheidungsfindung.
+
+Abgesehen von VUCA bietet DevOps weitere Chancen.
+Die Zuverlässigkeit und Qualität kann durch automatisiertes Testing und Bereitstellung
+erhöht werden. Durch automatisierte Prozesse wird die Fehleranfälligkeit
+reduziert und die allgemeine Codequalität steigt \cite{AmazonDevOps}.
+
+Durch automatisierte Prozesse ist sichergestellt, dass auch Projekte mit großem 
+Umfang zügig bereitgestellt werden können. Dies ist möglich, da Automatisierungen und die 
+unterliegende virtuelle Infrastruktur sehr gut skalieren können \cite{AmazonDevOps}.
+
+Eine weitere Chance, die DevOps bietet, ist erhöhte Sicherheit.
+Diese wird vor allem im erweiterten Modell DevSecOps mit in Betracht gezogen,
+welches nachfolgend eingeordnet wird.
+
+\subsection{Einordnung von DevSecOps}
+
+DevSecOps erweitert den DevOps Gedanken um ein weiteres Themenfeld, die Sicherheit oder
+Security. In diesem Ansatz ist die Software Sicherheit ein integraler Bestandteil
+des IT-Lifecycles \cite{RedHatDevSecOps}.
+Traditionell ist IT-Security eine abgetrennte, der Softwareentwicklung nachgelagerte Funktion
+und Aufgabe eines seperaten Teams.
+Mit schnellen Entwicklungszyklen, wie sie DevOps bietet, ist das Risiko groß,
+dass die Sicherheit den Entwicklungs- und Bereitstellungsprozess ausbremst, da
+sie nicht schnell genug auf Veränderungen reagieren kann \cite{RedHatDevSecOps}.
+
+DevSecOps berücksichtigt die Anwendungssicherheit von Anfang an. Dies beinhaltet die
+Automatisierung von sicherheitsrelevanten Tests und Prozessen,
+um den DevOps Prozess nicht zu verlangsamen und Releasezyklen schnell zu halten.
+Neben zusätzlicher Automatisierung und Tools ist aber auch ein Kulturwechsel nötig.
+Sicherheitsteams müssen von Beginn an fest mit in den Prozess integriert werden.
+Entwickler müssen offen mit Sicherheitsexperten kommunizieren und Bedrohungen müssen
+offen Kommuniziert werden, ähnlich der Fehlerkultur im regulären DevOps \cite{RedHatDevSecOps}.

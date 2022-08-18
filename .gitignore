@@ -46,6 +46,8 @@ wordcounts.txt
 *.pdfsync
 *.syc
 *.suc
+*.sub
+*.sym
 
 ## Build tool directories for auxiliary files
 # latexrun
